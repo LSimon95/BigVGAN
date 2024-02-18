@@ -11,9 +11,9 @@ import torch.nn as nn
 from torch.nn import Conv1d, ConvTranspose1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 
-import activations
-from utils import init_weights, get_padding
-from alias_free_torch import *
+import bigvgan.activations as activations
+from bigvgan.utils import init_weights, get_padding
+from bigvgan.alias_free_torch import *
 
 LRELU_SLOPE = 0.1
 
